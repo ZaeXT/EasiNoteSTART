@@ -3,13 +3,11 @@
 #include <string>
 #include <filesystem>
 using namespace std;
-int gen_rnd(int gen_min = 0,int gen_max = 36)
+int gen_rnd(int gen_min = 0, int gen_max = 36);
 int main()
 {
-#ifdef _WIN32   
     system("chcp 65001");
     system("cls");
-#endif
     string cfg[2],cho;
     cho = gen_rnd();
     fstream fs("config.ini", ios::in);
